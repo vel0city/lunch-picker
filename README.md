@@ -19,7 +19,7 @@ Run the docker container:
 Put it in on a cron job to run Monday through Friday at 10:30AM:
 ```
 crontab -e
-30 10 * * MON-FRI docker run --rm lunch_picker
+30 10 * * MON-FRI docker run --env-file /path/to/example_env --rm lunch_picker
 ```
 
 
